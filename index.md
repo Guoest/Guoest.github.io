@@ -1,13 +1,9 @@
-# Yicheng's Blog 
-
 <img src="https://github.com/Guoest/Guoest.github.io/assets/9883736/2a8e6d20-98d6-4383-946e-df62d8010cb4" alt="yicheng" width="100"/>
 
 
 Hello and welcome to my blog!
 
-Dive into the convergence of technology and real-world applications here, where we explore Machine Learning and the world of AI. From the latest AI trends to practical tutorials and insightful discussions, this space is designed for enthusiasts and professionals alike. 
-
-Your adventure into tech and practicality starts here!
+Your adventure into Machine Learning and practicality starts here!
 
 
 
