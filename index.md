@@ -1,7 +1,22 @@
-Hello and welcome to this blog. Edit the `index.md` file to change this content. All pages on the blog, including this one, use [Markdown](https://guides.github.com/features/mastering-markdown/). You can include images:
+# Yicheng's Blog
 
-![Image of fast.ai logo](images/logo.png)
+Hello and welcome to my blog. 
 
-## This is a title
+<img src="https://github.com/Guoest/Guoest.github.io/assets/9883736/a2c79fc6-3a9e-4357-a9c8-02f135c93fed" alt="yicheng" width="200"/>
 
-And you can include links, like this [link to fast.ai](https://www.fast.ai). Posts will appear after this file. 
+
+Add this to your readme.md file and substitute href value with your social media link
+<div id="badges">
+  <a href="https://www.linkedin.com/in/yichengguo/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+  
+  <a href="https://twitter.com/YichengGuo4938">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="Twitter Badge"/>
+  </a>
+  
+  <a href="https://www.strava.com/athletes/57410248">
+    <img src="https://img.shields.io/badge/Strava-FC4C02?style=for-the-badge&logo=strava&logoColor=white" alt="Strava Badge"/>
+  </a>
+
+</div>
