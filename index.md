@@ -1,11 +1,16 @@
-# Yicheng's Blog
+# Yicheng's Blog 
 
-Hello and welcome to my blog. 
-
-<img src="https://github.com/Guoest/Guoest.github.io/assets/9883736/a2c79fc6-3a9e-4357-a9c8-02f135c93fed" alt="yicheng" width="200"/>
+<img src="https://github.com/Guoest/Guoest.github.io/assets/9883736/2a8e6d20-98d6-4383-946e-df62d8010cb4" alt="yicheng" width="100"/>
 
 
-Add this to your readme.md file and substitute href value with your social media link
+Hello and welcome to my blog!
+
+Dive into the convergence of technology and real-world applications here, where we explore Machine Learning and the world of AI. From the latest AI trends to practical tutorials and insightful discussions, this space is designed for enthusiasts and professionals alike. 
+
+Your adventure into tech and practicality starts here!
+
+
+
 <div id="badges">
   <a href="https://www.linkedin.com/in/yichengguo/">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
