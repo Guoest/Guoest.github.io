@@ -6,12 +6,12 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Yicheng's blog
-description: This is a space where I post my personal learnings and projects.
+title: Beyond Human Intelligence
+description: Learn with me.
 github_username: Guoest
 
 # Email and twitter are optional:
-email:
+email: gguoyicheng@gmail.com
 twitter_username: YichengGuo4938
 
 # Set this to true to get LaTeX math equation support
