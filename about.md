@@ -3,13 +3,6 @@
 <img src="https://github.com/Guoest/Guoest.github.io/assets/9883736/2a8e6d20-98d6-4383-946e-df62d8010cb4" alt="yicheng" width="100"/>
 
 
-<div id="badges">
-  <a href="https://www.linkedin.com/in/yichengguo/">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-  </a>
-</div>
-
-
   
 Yicheng Guo is a machine learning engineer at REA Group (ASX:REA), having honed his skills in cloud computing and DevOps over 8 years as a self-taught SRE. A profound passion steered his shift to machine learning. 
 
