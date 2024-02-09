@@ -4,7 +4,7 @@
 
 
   
-Yicheng Guo is a machine learning engineer at REA Group (ASX:REA), having honed his skills in cloud computing and DevOps over 8 years as a self-taught SRE. A profound passion steered his shift to machine learning. 
+Yicheng Guo is a machine learning engineer at REA Group (ASX:REA), having honed his skills in cloud computing and DevOps over 8 years as a self-taught SRE. A profound passion steered his shift to machine learning and MLOps. He is now focusing on productionazing and scaling Machine Learning workloads with MLOps principles.
 
 Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman Triathlons and Marathons to his name, and is a certified running coach accredited by Athletics Australia. He advocates for discipline and hard work, viewing endurance sports as a means to strengthen his mental tenacity.
 
