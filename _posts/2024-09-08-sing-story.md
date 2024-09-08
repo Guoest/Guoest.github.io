@@ -99,7 +99,10 @@ Here’s the [page](https://guoest.github.io/2024/09/04/sing-zoe.html) I built, 
 ```
 ## The Journey
 
-The process turned out to be quite fun. I copied the entire HTML from the [Raising Children Network](https://raisingchildren.net.au/guides/baby-karaoke) page and told ChatGPT I wanted the videos to autoplay. After a few attempts, it got it working using JavaScript. I then took screenshots of the page it just built, sent them back to ChatGPT, and asked it to fix the styling and formatting. Eventually, we landed on the perfect solution. Again, here is the [page](https://guoest.github.io/2024/09/04/sing-zoe.html), and now I can open the page and enjoy the music with my daughter hands-free.
+The process turned out to be quite fun. I copied the entire HTML from the [Raising Children Network](https://raisingchildren.net.au/guides/baby-karaoke) page and told ChatGPT I wanted the videos to autoplay. After a few attempts, it got it working using JavaScript. I then took screenshots of the page it just built, sent them back to ChatGPT, and asked it to fix the styling and formatting. Eventually, we landed on the final solution. Again, here is the [page](https://guoest.github.io/2024/09/04/sing-zoe.html), and now I can open the page and enjoy the music with my daughter hands-free. You are welcome if you are facing the same issue with baby karaoke.
+
+![](/images/chatgpt.png "The screenshot-driven development")
+
 
 ## The Takeaway
 
