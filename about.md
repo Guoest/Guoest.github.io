@@ -1,6 +1,6 @@
-# About Yicheng Guo
+# About Yicheng
 
-<img src="https://github.com/Guoest/Guoest.github.io/assets/9883736/2a8e6d20-98d6-4383-946e-df62d8010cb4" alt="yicheng" width="100"/>
+<img src="/images/profile.jpeg" alt="yicheng" width="150" style="border-radius: 50%;" />
 
 
   
