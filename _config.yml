@@ -42,3 +42,7 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+# Custom head includes
+head_includes:
+  - <script src="/assets/js/theme.js" defer></script>
