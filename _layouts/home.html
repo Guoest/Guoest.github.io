@@ -1,0 +1,160 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <!-- Table of Contents -->
+    <div class="toc">
+      <h2>Table of Contents</h2>
+      {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+      {% for year in postsByYear %}
+        <h3>{{ year.name }}</h3>
+        <ul>
+          {% for post in year.items %}
+            <li>
+              <a href="#{{ post.date | date: '%Y-%m-%d' }}-{{ post.title | slugify }}">
+                {{ post.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li class="post-item" id="{{ post.date | date: '%Y-%m-%d' }}-{{ post.title | slugify }}">
+        <div class="post-image-container">
+          {% assign images = post.content | split: '<img' %}
+          {% if images.size > 1 %}
+            {% assign first_image = images[1] | split: 'src="' | last | split: '"' | first %}
+            <img src="{{ first_image }}" alt="Post thumbnail" class="post-thumbnail">
+          {% endif %}
+        </div>
+        <div class="post-content-preview">
+          {%- assign date_format = "%d %B %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+            {{ post.excerpt }}
+          {%- endif -%}
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>
+
+<style>
+  .post-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .post-item {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .post-image-container {
+    flex: 0 0 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+  }
+
+  .post-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .post-thumbnail:hover {
+    transform: scale(1.05);
+  }
+
+  .post-content-preview {
+    flex: 1;
+  }
+
+  .post-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  /* Table of Contents Styling */
+  .toc {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .toc h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+  }
+
+  .toc h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--heading-color);
+  }
+
+  .toc ul {
+    list-style: none;
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .toc li {
+    margin: 0.25rem 0;
+  }
+
+  .toc a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .toc a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 600px) {
+    .post-item {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .post-image-container {
+      width: 100%;
+      flex: 0 0 auto;
+    }
+
+    .toc {
+      padding: 1rem;
+    }
+  }
+</style> 
