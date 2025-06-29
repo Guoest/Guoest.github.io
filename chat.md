@@ -1,3 +1,9 @@
+---
+layout: default
+title: Chat with Yicheng
+permalink: /chat/
+---
+
 # Chat with Yicheng
 
 <img src="/images/profile.jpeg" alt="yicheng" width="150" style="border-radius: 50%;" />

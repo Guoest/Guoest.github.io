@@ -1,3 +1,9 @@
+---
+layout: default
+title: About Yicheng
+permalink: /about/
+---
+
 # About Yicheng
 
 <img src="/images/profile.jpeg" alt="yicheng" width="150" style="border-radius: 50%;" />
