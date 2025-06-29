@@ -1,0 +1,45 @@
+/* Dark mode styles for text visibility */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .site-title {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .category-card h2 a {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .site-header {
+  border-bottom: 1px solid #444;
+}
+
+[data-theme="dark"] .hero-content h1 {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .about-brief h2 {
+  color: #ffffff !important;
+}
+
+/* Improve text contrast in dark mode */
+[data-theme="dark"] .category-card p,
+[data-theme="dark"] .about-brief p {
+  color: #cccccc !important;
+}
+
+/* Make sure links are visible */
+[data-theme="dark"] .category-link {
+  color: #6da4ff !important;
+}
+
+/* Make sure page links are visible */
+[data-theme="dark"] .page-link {
+  color: #ffffff !important;
+}
