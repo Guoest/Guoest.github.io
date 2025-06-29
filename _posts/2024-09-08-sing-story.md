@@ -1,10 +1,18 @@
-# Hands-Free Music for My Daughter, Thanks to AI
+---
+layout: post
+title: Hands-Free Music for My Daughter, Thanks to AI
+categories: [life, tech]
+---
+
+<div class="table-of-contents" markdown="1">
+### Contents
+- [The Background Story](#the-background-story)
+- [The Results](#the-results)
+- [The Journey](#the-journey)
+- [The Takeaway](#the-takeaway)
+</div>
 
 ![](/images/baby-music.png)
-
-
-1. TOC
-{:toc}
 
 ## The Background Story
 

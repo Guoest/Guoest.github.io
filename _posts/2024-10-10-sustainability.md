@@ -1,9 +1,16 @@
-# Check Your Home's Sustainability Score
+---
+layout: post
+title: Check Your Home's Sustainability Score
+categories: [tech]
+---
 
-Table of Contents
-
-1. TOC
-{:toc}
+<div class="table-of-contents" markdown="1">
+### Contents
+- [Why It Matters](#why-it-matters)
+- [Introducing the Sustainability Scorer](#introducing-the-sustainability-scorer)
+- [How It Works](#how-it-works)
+- [Ready to Get Started?](#ready-to-get-started)
+</div>
 
 ## Why It Matters
 

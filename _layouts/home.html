@@ -36,7 +36,13 @@ layout: default
           {% assign images = post.content | split: '<img' %}
           {% if images.size > 1 %}
             {% assign first_image = images[1] | split: 'src="' | last | split: '"' | first %}
-            <img src="{{ first_image }}" alt="Post thumbnail" class="post-thumbnail">
+            <img src="{{ first_image }}" alt="{{ post.title }}" class="post-thumbnail">
+          {% else %}
+            {% if post.categories contains 'tech' %}
+              <img src="/images/logo.png" alt="Tech default" class="post-thumbnail">
+            {% else %}
+              <img src="/images/profile.jpeg" alt="Life default" class="post-thumbnail">
+            {% endif %}
           {% endif %}
         </div>
         <div class="post-content-preview">

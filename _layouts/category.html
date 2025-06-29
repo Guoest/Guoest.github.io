@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<div class="category">
+  <h1 class="page-heading">{{ page.title }}</h1>
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <!-- Table of Contents -->
+    <div class="toc">
+      <h2>Table of Contents</h2>
+      {% assign categoryPosts = site.posts | where_exp: "post", "post.categories contains page.category" %}
+      {% assign postsByYear = categoryPosts | group_by_exp: "post", "post.date | date: '%Y'" %}
+      {% for year in postsByYear %}
+        <h3>{{ year.name }}</h3>
+        <ul>
+          {% for post in year.items %}
+            <li>
+              <a href="#{{ post.date | date: '%Y-%m-%d' }}-{{ post.title | slugify }}">
+                {{ post.title }}
+              </a>
+              <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </div>
+
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+        {%- if post.categories contains page.category -%}
+        <li class="post-item" id="{{ post.date | date: '%Y-%m-%d' }}-{{ post.title | slugify }}">
+          <div class="post-image-container">
+            {% if post.title == "Let's Sing Zoe" %}
+              <img src="/images/baby-music.png" alt="{{ post.title }}" class="post-thumbnail">
+            {% else %}
+              {% assign frontmatter_done = false %}
+              {% assign post_lines = post.content | newline_to_br | split: '<br />' %}
+              {% assign has_md_image = false %}
+              {% for line in post_lines %}
+                {% if line contains '![' and line contains '](/images/' and frontmatter_done == true %}
+                  {% assign image_path = line | split: '](/images/' | last | split: ')' | first %}
+                  {% assign has_md_image = true %}
+                  {% break %}
+                {% endif %}
+                {% if line contains '---' %}
+                  {% if frontmatter_done == false %}
+                    {% assign frontmatter_done = true %}
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+              
+              {% if has_md_image %}
+                <img src="/images/{{ image_path }}" alt="{{ post.title }}" class="post-thumbnail">
+              {% elsif post.content contains '<img' %}
+                {% assign html_images = post.content | split: '<img' %}
+                {% assign first_html_image = html_images[1] | split: 'src="' | last | split: '"' | first %}
+                <img src="{{ first_html_image }}" alt="{{ post.title }}" class="post-thumbnail">
+              {% else %}
+                {% if page.category == 'tech' %}
+                  <img src="/images/logo.png" alt="Tech default" class="post-thumbnail">
+                {% else %}
+                  <img src="/images/profile.jpeg" alt="Life default" class="post-thumbnail">
+                {% endif %}
+              {% endif %}
+            {% endif %}
+          </div>
+          <div class="post-content-preview">
+            {%- assign date_format = "%d %B %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </div>
+        </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>

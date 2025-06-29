@@ -1,9 +1,15 @@
-# This is the title
+---
+layout: post
+title: Your Post Title
+categories: [tech] # or [life] or [tech, life]
+---
 
-Here's the table of contents:
-
-1. TOC
-{:toc}
+<div class="table-of-contents" markdown="1">
+### Contents
+- [Basic setup](#basic-setup)
+- [Basic formatting](#basic-formatting)
+- [Lists](#lists)
+</div>
 
 ## Basic setup
 

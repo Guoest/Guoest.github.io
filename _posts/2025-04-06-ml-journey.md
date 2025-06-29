@@ -1,4 +1,23 @@
-# How I Became a Machine Learning Engineer Without a Degree (and You Can Too!)
+---
+layout: post
+title: How I Became a Machine Learning Engineer Without a Degree (and You Can Too!)
+categories: [tech]
+---
+
+<div class="table-of-contents" markdown="1">
+### Contents
+- [My Professional Background](#my-professional-background)
+- [My Turning Point](#my-turning-point)
+- [How I Learned ML Without a Degree](#how-i-learned-ml-without-a-degree)
+  - [Starting with Fundamentals](#starting-with-fundamentals)
+  - [Combining DevOps and ML](#combining-devops-and-ml)
+  - [Hands-on Experience and Hackathons](#hands-on-experience-and-hackathons)
+  - [Learning through Building and Sharing](#learning-through-building-and-sharing)
+- [Taking the Leap](#taking-the-leap)
+- [The Next Opportunity](#the-next-opportunity)
+- [If You Are Thinking The Same](#if-you-are-thinking-the-same)
+- [Conclusion](#conclusion)
+</div>
 
 ![](/images/ml.png)
 
