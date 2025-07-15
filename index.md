@@ -36,6 +36,11 @@ layout: default
     <p>I write about technology and life experiences, sharing insights from my journey through the tech landscape and beyond. This blog is where I document my learnings and reflections.</p>
     <a href="/about/" class="about-link">Learn more about me →</a>
   </section>
+  
+  <!-- Buy Me a Coffee -->
+  <section class="support-section">
+    {% include buy-me-coffee.html style="card" title="Support My Work" message="If you enjoy my content and find it valuable, consider buying me a coffee to support my writing!" %}
+  </section>
 </div>
 
 <style>

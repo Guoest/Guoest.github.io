@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+      {%- if page.categories.size > 0 -%}
+        • 
+        {%- for category in page.categories -%}
+          <span class="post-category">{{ category }}</span>{% unless forloop.last %}, {% endunless %}
+        {%- endfor -%}
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <!-- Buy Me a Coffee -->
+  <div class="post-support">
+    {% include buy-me-coffee.html style="banner" title="Enjoyed this post?" message="If this article was helpful or interesting, consider supporting my work with a coffee!" %}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
+
+<style>
+  .post-category {
+    background: #e2e8f0;
+    color: #4a5568;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  [data-theme="dark"] .post-category {
+    background: #4a5568;
+    color: #e2e8f0;
+  }
+  
+  .post-support {
+    margin: 3rem 0 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  [data-theme="dark"] .post-support {
+    border-top-color: #4a5568;
+  }
+</style>

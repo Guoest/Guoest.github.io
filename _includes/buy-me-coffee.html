@@ -1,0 +1,158 @@
+{% assign style = include.style | default: 'default' %}
+{% assign message = include.message | default: 'If you found this content helpful, consider buying me a coffee!' %}
+
+<div class="buy-me-coffee buy-me-coffee--{{ style }}">
+  <div class="buy-me-coffee__content">
+    <div class="buy-me-coffee__icon">☕</div>
+    <div class="buy-me-coffee__text">
+      <h3 class="buy-me-coffee__title">{{ include.title | default: 'Support My Work' }}</h3>
+      <p class="buy-me-coffee__message">{{ message }}</p>
+    </div>
+    <div class="buy-me-coffee__action">
+      <a href="https://coffee.beyondintelligence.dev" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="buy-me-coffee__button">
+        Buy Me a Coffee
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .buy-me-coffee {
+    margin: 2rem 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .buy-me-coffee__content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .buy-me-coffee__icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+  }
+  
+  .buy-me-coffee__text {
+    flex: 1;
+  }
+  
+  .buy-me-coffee__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .buy-me-coffee__message {
+    margin: 0;
+    opacity: 0.8;
+    line-height: 1.4;
+  }
+  
+  .buy-me-coffee__button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #FFDD44 0%, #FF6B35 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
+    white-space: nowrap;
+  }
+  
+  .buy-me-coffee__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Card Style - for main page */
+  .buy-me-coffee--card {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .buy-me-coffee--card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  [data-theme="dark"] .buy-me-coffee--card {
+    background-color: #2d3748;
+    border-color: #4a5568;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  [data-theme="dark"] .buy-me-coffee--card:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Banner Style - for blog posts */
+  .buy-me-coffee--banner {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-left: 4px solid #FFDD44;
+  }
+  
+  [data-theme="dark"] .buy-me-coffee--banner {
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+    border-left-color: #FFDD44;
+  }
+  
+  /* Inline Style - minimal */
+  .buy-me-coffee--inline {
+    background-color: rgba(255, 221, 68, 0.1);
+    border: 1px solid rgba(255, 221, 68, 0.3);
+  }
+  
+  .buy-me-coffee--inline .buy-me-coffee__content {
+    padding: 1rem;
+  }
+  
+  .buy-me-coffee--inline .buy-me-coffee__icon {
+    font-size: 1.8rem;
+  }
+  
+  .buy-me-coffee--inline .buy-me-coffee__title {
+    font-size: 1rem;
+  }
+  
+  .buy-me-coffee--inline .buy-me-coffee__message {
+    font-size: 0.9rem;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 600px) {
+    .buy-me-coffee__content {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .buy-me-coffee__icon {
+      font-size: 2rem;
+    }
+    
+    .buy-me-coffee__button {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Dark mode text colors */
+  [data-theme="dark"] .buy-me-coffee__title {
+    color: #e2e8f0;
+  }
+  
+  [data-theme="dark"] .buy-me-coffee__message {
+    color: #a0aec0;
+  }
+</style>

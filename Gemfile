@@ -34,3 +34,4 @@ gem "faraday", "< 1.0"
 
 
 gem "webrick", "~> 1.8"
+gem "bigdecimal"
