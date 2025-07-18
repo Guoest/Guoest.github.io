@@ -49,4 +49,51 @@ This is a Jekyll-based personal blog hosted on GitHub Pages with the following s
 - Uses Jekyll plugins: jekyll-feed, jekyll-gist, jekyll-octicons, jekyll-github-metadata
 
 ### Content Creation
-Posts require front matter with layout, title, categories, and date. Support for both single and multiple categories. Custom includes available for alerts and info boxes.
+
+#### Post Creation Scripts
+```bash
+# Create new post with automatic setup
+ruby scripts/new-post.rb "Post Title" [tech|life]
+# Examples:
+ruby scripts/new-post.rb "My AI Journey" tech
+ruby scripts/new-post.rb "Travel Stories" life
+```
+
+#### Image Management
+```bash
+# Add single image and generate markdown
+ruby scripts/image-helper.rb add post-slug ~/path/to/image.png "Alt text"
+
+# Create image gallery
+ruby scripts/image-helper.rb gallery post-slug image1.png image2.png image3.png
+
+# Screenshot workflow helper
+ruby scripts/image-helper.rb screenshot post-slug "Description"
+
+# List images for a post
+ruby scripts/image-helper.rb list post-slug
+```
+
+#### Enhanced Image Includes
+```markdown
+<!-- Responsive image with caption -->
+{% include image.html src="/images/post-slug/image.png" alt="Description" caption="Optional caption" %}
+
+<!-- Image with custom styling -->
+{% include image.html src="/images/post-slug/screenshot.png" alt="Screenshot" class="screenshot" %}
+
+<!-- Image gallery -->
+<div class="image-gallery">
+  {% include image.html src="/images/post-slug/img1.jpg" alt="Image 1" class="" %}
+  {% include image.html src="/images/post-slug/img2.jpg" alt="Image 2" class="" %}
+</div>
+```
+
+#### Templates
+- `_posts/tech-template-enhanced.md`: Comprehensive tech post structure
+- `_posts/life-template-enhanced.md`: Personal story format
+- `_posts/template.md`: Basic template (original)
+- `_posts/life-template.md`: Simple life template (original)
+
+#### Post Structure
+Posts require front matter with layout, title, categories, and date. Support for both single and multiple categories. Custom includes available for alerts, info boxes, and enhanced images.
