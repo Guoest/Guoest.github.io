@@ -389,3 +389,5 @@ The tools are here. The barriers are gone. The only question is: what will you b
 
 
 ---
+
+I ran a live workshop walking people through these steps. You can watch the recording [here](https://youtu.be/McSwNm64kLU)
