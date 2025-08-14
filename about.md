@@ -21,6 +21,15 @@ Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Tr
 4. **Site Reliability Engineer,** Optiver, Dec 2017 - Jul 2018
 5. **IT Graduate,** Google, July 2015 – Oct 2017 
 
+## Speaking Engagements
+
+**[Generation AI](https://generationai.au/) Startup 101 Vibe Coding Your MVP Workshop** - *July 2025*  
+**Topic:** [Your App Isn't Complete Without THIS (Payments + Users)](https://youtu.be/McSwNm64kLU)
+
+**[Code for School](https://csinschools.io/tech-futures-career-resources-for-schools/) Tech Futures** - *June 2025*  
+**Topic:** [What Does A Machine Learning Engineer Do?](https://www.youtube.com/watch?v=U5_3ZCs7t78&list=PLLZ26OozitqEutsw6UXBAXgg6ub1MNRNi&index=2&t=1072s&ab_channel=REAGroup)
+
+
 ## Education
 1. **The Auatralian National University - B.Eng Honours,** Machtronics, Robotics and Automation Engineering
 2. **Beijing Institue of Technology- B.Eng,** Electrical, Electronics and Communications Engineering
