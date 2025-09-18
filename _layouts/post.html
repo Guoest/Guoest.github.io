@@ -31,6 +31,9 @@ layout: default
     {% include buy-me-coffee.html style="banner" title="Enjoyed this post?" message="If this article was helpful or interesting, consider supporting my work with a coffee!" %}
   </div>
 
+  <!-- Comments Section -->
+  {% include giscus-comments.html %}
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
