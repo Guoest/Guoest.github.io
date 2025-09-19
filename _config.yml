@@ -47,3 +47,11 @@ kramdown:
 # Custom head includes
 head_includes:
   - <script src="/assets/js/theme.js" defer></script>
+
+# Giscus Comments (GitHub Discussions)
+giscus:
+  enabled: true
+  repo: "Guoest/Guoest.github.io"
+  repo_id: "R_kgDOLKOEAg"
+  category: "General"
+  category_id: "DIC_kwDOLKOEAs4CvmcO"

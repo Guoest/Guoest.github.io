@@ -26,10 +26,8 @@ layout: default
     {{ content }}
   </div>
 
-  <!-- Buy Me a Coffee -->
-  <div class="post-support">
-    {% include buy-me-coffee.html style="banner" title="Enjoyed this post?" message="If this article was helpful or interesting, consider supporting my work with a coffee!" %}
-  </div>
+  <!-- Comments Section -->
+  {% include giscus-comments.html %}
 
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
@@ -53,13 +51,4 @@ layout: default
     color: #e2e8f0;
   }
   
-  .post-support {
-    margin: 3rem 0 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid #e2e8f0;
-  }
-  
-  [data-theme="dark"] .post-support {
-    border-top-color: #4a5568;
-  }
 </style>
