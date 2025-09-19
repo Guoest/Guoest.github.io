@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How I Became a Machine Learning Engineer Without a Degree (and You Can Too!)
+date: 2025-04-06
 categories: [tech]
 ---
 
@@ -47,7 +48,7 @@ Learning ML became hands-on when I participated in an internal hackathon, buildi
 
 ### Learning through Building and Sharing
 
-Beyond structured courses, I embraced practical advices from fast.ai and developed numerous projects. I consistently shared these projects through demos, internal presentations, and [blog posts]([https://guoest.github.io/](https://guoest.github.io/)). Writing publicly and participating in podcasts about AI helped me consolidate my learning and built my credibility in the ML community.
+Beyond structured courses, I embraced practical advices from fast.ai and developed numerous projects. I consistently shared these projects through demos, internal presentations, and [blog posts](/). Writing publicly and participating in podcasts about AI helped me consolidate my learning and built my credibility in the ML community.
 
 ## Taking the Leap
 

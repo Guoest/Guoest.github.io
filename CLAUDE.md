@@ -97,3 +97,43 @@ ruby scripts/image-helper.rb list post-slug
 
 #### Post Structure
 Posts require front matter with layout, title, categories, and date. Support for both single and multiple categories. Custom includes available for alerts, info boxes, and enhanced images.
+
+## Testing Requirements - MANDATORY FOR CLAUDE CODE
+
+### Post-Task Testing Protocol
+**CRITICAL**: Claude Code MUST run tests after completing any coding task. No exceptions.
+
+#### Required Test Commands (run after ANY code changes):
+```bash
+# ALWAYS run this first - full test suite
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+bundle exec rake test
+
+# If tests fail, debug with individual commands:
+bundle exec rspec                    # RSpec tests only
+bundle exec rake htmlproofer         # HTML validation only
+bundle exec jekyll build             # Site build test only
+bundle exec rake test_clean          # Clean test artifacts
+```
+
+#### Success Criteria:
+- ✅ All RSpec tests pass (13-14/14 expected)
+- ✅ HTMLProofer warnings for external links are acceptable
+- ✅ Jekyll builds without errors
+- ✅ No broken internal links
+- ✅ All posts have required front matter
+- ✅ Test artifacts are cleaned up
+
+#### Claude Code Testing Workflow:
+1. Complete coding task
+2. **IMMEDIATELY** run `bundle exec rake test`
+3. If tests fail → fix issues → re-run tests
+4. Only after tests pass → task is complete
+5. Clean up any test artifacts with `bundle exec rake test_clean`
+6. Ready for commit (if requested)
+
+#### Troubleshooting Common Test Issues:
+- **Temporary test files**: Use `bundle exec rake test_clean` to remove
+- **External link failures**: Acceptable if it's MailChimp or encoding issues
+- **Front matter errors**: All posts need `title`, `date`, and `layout` fields
+- **Ruby script tests**: May create temporary posts during testing (normal behavior)

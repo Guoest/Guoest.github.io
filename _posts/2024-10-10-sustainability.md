@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Check Your Home's Sustainability Score
+date: 2024-10-10
 categories: [tech]
 ---
 

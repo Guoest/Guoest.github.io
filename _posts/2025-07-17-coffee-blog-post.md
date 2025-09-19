@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Built a Buy Me a Coffee Clone in 6 Hours Using AI (And You Can Too)"
+date: 2025-07-17
 categories: [tech]
 ---
 
