@@ -1,0 +1,12 @@
+{
+  "disable_external": false,
+  "check_img_http": false,
+  "check_favicon": false,
+  "allow_hash_href": true,
+  "empty_alt_ignore": true,
+  "url_ignore": ["localhost", "127.0.0.1"],
+  "typhoeus": {
+    "timeout": 30,
+    "connecttimeout": 10
+  }
+}

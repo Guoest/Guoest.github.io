@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How I Became a Machine Learning Engineer Without a Degree (and You Can Too!)
+date: 2025-04-06
 categories: [tech]
 ---
 

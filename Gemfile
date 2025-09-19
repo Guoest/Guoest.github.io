@@ -36,3 +36,10 @@ gem "faraday", "< 1.0"
 
 gem "webrick", "~> 1.8"
 gem "bigdecimal"
+
+# Testing gems
+group :test do
+  gem 'rspec', '~> 3.12'
+  gem 'html-proofer', '~> 5.0'
+  gem 'rake', '~> 13.0'
+end

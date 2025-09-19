@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hands-Free Music for My Daughter, Thanks to AI
+date: 2024-09-08
 categories: [life, tech]
 ---
 
