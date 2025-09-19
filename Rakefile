@@ -60,9 +60,8 @@ desc 'Clean test artifacts and temporary files'
 task :test_clean do
   puts 'Cleaning test artifacts...'
 
-  # Remove test-generated posts
-  Dir.glob('_posts/2025-09-19-*.md').each { |f| File.delete(f) rescue nil }
-  Dir.glob('_posts/*test*.md').each { |f| File.delete(f) rescue nil }
+  # Remove test-generated posts (specific patterns only)
+  Dir.glob('_posts/*test-post*.md').each { |f| File.delete(f) rescue nil }
   Dir.glob('_posts/*dummy*.md').each { |f| File.delete(f) rescue nil }
   Dir.glob('_posts/*dryrun*.md').each { |f| File.delete(f) rescue nil }
 
