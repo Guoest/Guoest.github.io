@@ -8,10 +8,17 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
+    <!-- Filter posts by language -->
+    {%- if page.url contains '/zh' -%}
+      {%- assign filtered_posts = site.posts | where: "lang", "zh" -%}
+    {%- else -%}
+      {%- assign filtered_posts = site.posts | where_exp: "post", "post.lang != 'zh'" -%}
+    {%- endif -%}
+
     <!-- Table of Contents -->
     <div class="toc">
       <h2>Table of Contents</h2>
-      {% assign categoryPosts = site.posts | where_exp: "post", "post.categories contains page.category" %}
+      {% assign categoryPosts = filtered_posts | where_exp: "post", "post.categories contains page.category" %}
       {% assign postsByYear = categoryPosts | group_by_exp: "post", "post.date | date: '%Y'" %}
       {% for year in postsByYear %}
         <h3>{{ year.name }}</h3>
@@ -30,7 +37,7 @@ layout: default
 
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in filtered_posts -%}
         {%- if post.categories contains page.category -%}
         <li class="post-item" id="{{ post.date | date: '%Y-%m-%d' }}-{{ post.title | slugify }}">
           <div class="post-image-container">

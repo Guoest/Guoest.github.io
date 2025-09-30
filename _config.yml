@@ -56,3 +56,8 @@ giscus:
   repo_id: "R_kgDOLKOEAg"
   category: "General"
   category_id: "DIC_kwDOLKOEAs4CvmcO"
+
+# Language Configuration
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization: ["assets", "images", "scripts"]

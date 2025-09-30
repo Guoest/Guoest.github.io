@@ -23,10 +23,17 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-        <div class="disclaimer">
-          <p><small><em>The views and opinions expressed on this blog are my own and do not represent the views of any company or organization I am affiliated with.</em></small></p>
-        </div>
+        {% if page.url contains '/zh' %}
+          <p>与我一起学习。</p>
+          <div class="disclaimer">
+            <p><small><em>本博客中表达的观点和意见仅代表我个人，不代表我所属的任何公司或组织的观点。</em></small></p>
+          </div>
+        {% else %}
+          <p>{{- site.description | escape -}}</p>
+          <div class="disclaimer">
+            <p><small><em>The views and opinions expressed on this blog are my own and do not represent the views of any company or organization I am affiliated with.</em></small></p>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>

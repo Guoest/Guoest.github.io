@@ -65,4 +65,13 @@
   window.onload = wrap_img;
   </script>
 
+  <!-- Language detection and switching -->
+  <script src="{{ "/assets/js/language.js" | relative_url }}" defer></script>
+
+  <!-- Language alternates for SEO -->
+  {% assign current_path = page.url | remove_first: '/zh' %}
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ current_path }}" />
+  <link rel="alternate" hreflang="zh-Hans" href="{{ site.url }}/zh{{ current_path }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ current_path }}" />
+
 </head>
