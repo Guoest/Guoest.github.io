@@ -11,6 +11,10 @@ description: Learn with me.
 github_username: Guoest
 repository: Guoest/Guoest.github.io
 
+# Site URL for custom domain
+url: "https://blog.beyondintelligence.dev"
+baseurl: "" # Empty for custom domain at root
+
 # Email and twitter are optional:
 email: 
 twitter_username: YichengGuo4938
