@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <a class="site-title" rel="author" href="{% if page.url contains '/zh' %}/zh/{% else %}/{% endif %}">{{ site.title | escape }}</a>
     
     <div class="right-container">
       <nav class="site-nav">
@@ -14,14 +14,24 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="/categories/tech/">Tech</a>
-          <a class="page-link" href="/categories/life/">Life</a>
-          <a class="page-link" href="/about/">About</a>
-          <a class="page-link" href="/chat/">Chat with Yicheng</a>
-          <a class="page-link" href="/subscribe.html">Subscribe</a>
+          {% if page.url contains '/zh' %}
+            <a class="page-link" href="/zh/categories/tech/">技术</a>
+            <a class="page-link" href="/zh/categories/life/">生活</a>
+            <a class="page-link" href="/zh/about/">关于</a>
+            <a class="page-link" href="/zh/chat/">与Yicheng聊天</a>
+            <a class="page-link" href="/zh/subscribe.html">订阅</a>
+          {% else %}
+            <a class="page-link" href="/categories/tech/">Tech</a>
+            <a class="page-link" href="/categories/life/">Life</a>
+            <a class="page-link" href="/about/">About</a>
+            <a class="page-link" href="/chat/">Chat with Yicheng</a>
+            <a class="page-link" href="/subscribe.html">Subscribe</a>
+          {% endif %}
         </div>
       </nav>
-      
+
+      {%- include language-toggle.html -%}
+
       <div class="dark-mode-toggle">
         <div class="toggle-switch">
           <input type="checkbox" id="darkModeToggle" class="toggle-input" aria-label="Toggle dark mode">
