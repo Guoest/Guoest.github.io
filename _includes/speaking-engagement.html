@@ -1,0 +1,41 @@
+{% comment %}
+Speaking engagement component with photo and description in one line
+Usage:
+{% include speaking-engagement.html
+   image="/images/ai-startup.jpg"
+   title="Generation AI Startup 101 Vibe Coding Your MVP Workshop"
+   topic="Your App Isn't Complete Without THIS (Payments + Users)"
+   topic_url="https://youtu.be/McSwNm64kLU"
+   date="July 2025"
+   event="Generation AI"
+   event_url="https://generationai.au/"
+%}
+{% endcomment %}
+
+<div class="speaking-engagement">
+  {% if include.image %}
+  <div class="engagement-image">
+    <img src="{{ include.image }}" alt="{{ include.title }}" loading="lazy">
+  </div>
+  {% endif %}
+
+  <div class="engagement-content">
+    <div class="engagement-header">
+      {% if include.event_url %}
+      <strong><a href="{{ include.event_url }}" target="_blank" rel="noopener noreferrer">{{ include.event }}</a> {{ include.title }}</strong>
+      {% else %}
+      <strong>{{ include.event }} {{ include.title }}</strong>
+      {% endif %}
+      <span class="engagement-date"> - <em>{{ include.date }}</em></span>
+    </div>
+
+    <div class="engagement-topic">
+      <strong>Topic:</strong>
+      {% if include.topic_url %}
+      <a href="{{ include.topic_url }}" target="_blank" rel="noopener noreferrer">{{ include.topic }}</a>
+      {% else %}
+      {{ include.topic }}
+      {% endif %}
+    </div>
+  </div>
+</div>
