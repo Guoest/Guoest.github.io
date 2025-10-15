@@ -22,16 +22,27 @@ RSpec.describe 'new-post.rb' do
     FileUtils.mkdir_p('_posts')
     FileUtils.mkdir_p('images')
 
-    # Create mock template
-    File.write('_posts/template.md', <<~TEMPLATE)
+    # Create mock templates
+    File.write('_posts/tech-template-enhanced.md', <<~TEMPLATE)
       ---
       layout: post
-      title: "Your Post Title"
-      date: YYYY-MM-DD
+      title: "{{TITLE}}"
+      date: {{DATE}}
       categories: [tech]
       ---
 
-      Your content here with /images/your-image.png
+      Your content here with /images/{{SLUG}}/hero.png
+    TEMPLATE
+
+    File.write('_posts/life-template-enhanced.md', <<~TEMPLATE)
+      ---
+      layout: post
+      title: "{{TITLE}}"
+      date: {{DATE}}
+      categories: [life]
+      ---
+
+      Your life content here with /images/{{SLUG}}/hero.jpg
     TEMPLATE
   end
 

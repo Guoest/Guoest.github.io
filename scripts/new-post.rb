@@ -21,16 +21,13 @@ def create_post(title, category = 'tech')
   FileUtils.mkdir_p(image_folder)
   
   # Load template
-  template_file = category == 'life' ? '_posts/life-template.md' : '_posts/template.md'
+  template_file = category == 'life' ? '_posts/life-template-enhanced.md' : '_posts/tech-template-enhanced.md'
   template = File.read(template_file)
   
   # Replace placeholders
-  content = template.gsub('Your Post Title', title)
-                   .gsub('Your Life Post Title Here', title)
-                   .gsub('YYYY-MM-DD', date.strftime('%Y-%m-%d'))
-                   .gsub('[tech]', "[#{category}]")
-                   .gsub('/images/your-image.png', "/images/#{slug}/hero.png")
-                   .gsub('/images/another-image.png', "/images/#{slug}/image-2.png")
+  content = template.gsub('{{TITLE}}', title)
+                   .gsub('{{DATE}}', date.strftime('%Y-%m-%d'))
+                   .gsub('{{SLUG}}', slug)
   
   # Write post file
   File.write(filepath, content)
