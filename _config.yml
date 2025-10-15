@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Beyond Intelligence
-description: Learn with me.
+description: Exploring AI, machine learning, and technology. Learn with Yicheng Guo, a Senior ML Engineer sharing insights on AI products, MLOps, and the future of intelligent systems.
 github_username: Guoest
 repository: Guoest/Guoest.github.io
 
@@ -16,9 +16,34 @@ url: "https://blog.beyondintelligence.dev"
 baseurl: "" # Empty for custom domain at root
 
 # Email and twitter are optional:
-email: 
+email:
 twitter_username: YichengGuo4938
 linkedin_username: yichengguo
+
+# Author information for SEO
+author:
+  name: Yicheng Guo
+  twitter: YichengGuo4938
+  picture: /images/profile.jpeg
+
+# Social profiles for SEO
+social:
+  name: Yicheng Guo
+  links:
+    - https://twitter.com/YichengGuo4938
+    - https://www.linkedin.com/in/yichengguo
+    - https://github.com/Guoest
+
+# Logo for SEO
+logo: /images/profile.jpeg
+
+# Locale for SEO
+locale: en_US
+
+# Webmaster verifications
+webmaster_verifications:
+  google: # Add Google Search Console verification code here
+  bing: # Add Bing verification code here
 
 # Set this to true to get LaTeX math equation support
 use_math:

@@ -3,6 +3,11 @@ layout: post
 title: "{{TITLE}}"
 categories: [life]
 date: {{DATE}}
+# SEO fields (IMPORTANT - Fill these out!)
+description: "Write a compelling 150-160 character description that tells readers what this story is about. Make it engaging and personal!"
+image: /images/{{SLUG}}/hero.jpg  # Featured image for social sharing
+# Optional SEO fields:
+# author: Yicheng Guo  # Uncomment if different from site default
 ---
 
 <div class="table-of-contents" markdown="1">

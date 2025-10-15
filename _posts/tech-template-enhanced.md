@@ -3,6 +3,12 @@ layout: post
 title: "{{TITLE}}"
 categories: [tech]
 date: {{DATE}}
+# SEO fields (IMPORTANT - Fill these out!)
+description: "Write a compelling 150-160 character description that summarizes the post and includes relevant keywords. This appears in search results!"
+image: /images/{{SLUG}}/hero.png  # Featured image for social sharing (Open Graph/Twitter Cards)
+# Optional SEO fields:
+# author: Yicheng Guo  # Uncomment if different from site default
+# keywords: machine learning, AI, MLOps  # Comma-separated keywords
 ---
 
 <div class="table-of-contents" markdown="1">

@@ -3,6 +3,32 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <!-- Enhanced Article Schema for SEO -->
+  <meta itemprop="headline" content="{{ page.title }}">
+  {% if page.description %}
+  <meta itemprop="description" content="{{ page.description }}">
+  {% endif %}
+  {% if page.image %}
+  <meta itemprop="image" content="{{ site.url }}{{ page.image }}">
+  {% endif %}
+  <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+  <meta itemprop="dateModified" content="{{ page.last_modified_at | default: page.date | date_to_xmlschema }}">
+  <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author.name }}{% endif %}">
+  </span>
+  <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="{{ site.title }}">
+    {% if site.logo %}
+    <span itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <meta itemprop="url" content="{{ site.url }}{{ site.logo }}">
+    </span>
+    {% endif %}
+  </span>
+  <meta itemprop="mainEntityOfPage" content="{{ site.url }}{{ page.url }}">
+
+  <!-- Breadcrumb navigation -->
+  {% include breadcrumbs.html %}
+
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
@@ -14,7 +40,7 @@ layout: default
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}
       {%- if page.categories.size > 0 -%}
-        • 
+        •
         {%- for category in page.categories -%}
           <span class="post-category">{{ category }}</span>{% unless forloop.last %}, {% endunless %}
         {%- endfor -%}

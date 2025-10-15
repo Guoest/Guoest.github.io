@@ -3,6 +3,8 @@ layout: post
 title: Hands-Free Music for My Daughter, Thanks to AI
 date: 2024-09-08
 categories: [life, tech]
+description: How I used ChatGPT to build a custom hands-free music player for my daughter without writing a single line of code - solving the autoplay problem for baby karaoke.
+image: /images/baby-music.png
 ---
 
 <div class="table-of-contents" markdown="1">

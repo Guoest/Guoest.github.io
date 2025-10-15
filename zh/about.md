@@ -1,8 +1,9 @@
 ---
 layout: default
-title: 关于Yicheng
+title: 关于Yicheng Guo - 高级机器学习工程师
 lang: zh
 permalink: /zh/about/
+description: Yicheng Guo是REA Group的高级机器学习工程师，专注于AI产品、MLOps和智能系统扩展。前Google工程师、耐力运动员和AI思想领袖。
 ---
 
 <link rel="stylesheet" href="/assets/css/speaking-engagements.css">
@@ -78,5 +79,5 @@ Yicheng Guo是一位科技行业AI思想领袖和机器学习工程师。作为�
 
 
 ## 教育背景
-1. **澳大利亚国立大学 - 工程学士（荣誉），** 机械电子工程、机器人与自动化工程
-2. **北京理工大学 - 工程学士，** 自动化工程
+1. **澳大利亚国立大学 - 工程学士（荣誉），** 机电工程、机器人与自动化工程
+2. **北京理工大学 - 工程学士，** 电气、电子与通信工程

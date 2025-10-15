@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Beyond Intelligence - AI, Machine Learning & Technology Blog
+description: Explore AI and machine learning insights from Yicheng Guo, a Senior ML Engineer. Technical deep dives, real-world ML implementations, and personal reflections on technology and life.
 ---
 
 <div class="home">

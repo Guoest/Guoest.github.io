@@ -3,6 +3,8 @@ layout: post
 title: Check Your Home's Sustainability Score
 date: 2024-10-10
 categories: [tech]
+description: Introducing the AI-powered Sustainability Scorer - upload photos of your home and get instant sustainability ratings with improvement recommendations using LLM technology.
+image: /images/sus-scorer.png
 ---
 
 <div class="table-of-contents" markdown="1">

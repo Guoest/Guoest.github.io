@@ -1,8 +1,9 @@
 ---
 layout: default
-title: About Yicheng
+title: About Yicheng Guo - Senior Machine Learning Engineer
 lang: en
 permalink: /about/
+description: Yicheng Guo is a Senior ML Engineer at REA Group specializing in AI products, MLOps, and scaling intelligent systems. Former Google engineer, endurance athlete, and AI thought leader.
 ---
 
 <link rel="stylesheet" href="/assets/css/speaking-engagements.css">
@@ -18,8 +19,8 @@ Yicheng Guo is an AI thought leader and machine learning engineer in the tech in
 Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Triathlons](https://www.multisportaustralia.com.au/races/ironman-703-western-sydney-2022/events/1/results/individuals/892) and and [Marathons](https://my1.raceresult.com/225892/certificate/157/Certificates) to his name, and is a certified running coach accredited by Athletics Australia. He advocates for discipline and hard work, viewing endurance sports as a means to strengthen his mental tenacity.
 
 ## Experience
-1. **Senior Machine Leraning Engineer,** REA Group, Dec 2023 – Present 
-2. **Senior Systems Engineer** REA Group, Aug 2021 – Dec 2023
+1. **Senior Machine Learning Engineer,** REA Group, Dec 2023 – Present
+2. **Senior Systems Engineer,** REA Group, Aug 2021 – Dec 2023
 3. **Lead Site Reliability Engineer,** PwC, Aug 2018 – Aug 2021
 4. **Site Reliability Engineer,** Optiver, Dec 2017 - Jul 2018
 5. **IT Graduate,** Google, July 2015 – Oct 2017 
@@ -28,8 +29,8 @@ Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Tr
 
 {% include speaking-engagement.html
    image="/images/cgs.jpeg"
-   title="Iindustry Panel"
-   topic="The Path You Didn’t Plan"
+   title="Industry Panel"
+   topic="The Path You Didn't Plan"
    topic_url="https://www.linkedin.com/posts/caulfield-grammar-school_caulfieldgrammar2025-activity-7376571513413697537-u1a7?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA0Vj0gBvMYFWr0iKZJ-c47SlsLGDh3nmCg"
    date="Oct 2025"
    event="Caulfield Grammar School"
@@ -78,5 +79,5 @@ Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Tr
 
 
 ## Education
-1. **The Auatralian National University - B.Eng Honours,** Machtronics, Robotics and Automation Engineering
-2. **Beijing Institue of Technology- B.Eng,** Electrical, Electronics and Communications Engineering
+1. **The Australian National University - B.Eng Honours,** Mechatronics, Robotics and Automation Engineering
+2. **Beijing Institute of Technology - B.Eng,** Electrical, Electronics and Communications Engineering

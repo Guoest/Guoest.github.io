@@ -3,6 +3,8 @@ layout: post
 title: "Why Now Is the Best Time to Start a Company"
 categories: [tech]
 date: 2025-09-19
+description: Why the AI revolution creates unprecedented opportunities for startups. Exploring the capability-application gap, startup agility advantages, and why entrepreneurs should act now.
+image: /images/ai-startup.jpg
 ---
 
 <div class="table-of-contents" markdown="1">

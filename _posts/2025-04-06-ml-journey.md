@@ -3,6 +3,8 @@ layout: post
 title: How I Became a Machine Learning Engineer Without a Degree (and You Can Too!)
 date: 2025-04-06
 categories: [tech]
+description: A self-taught journey from DevOps to Machine Learning Engineering. Learn how I transitioned to ML through hands-on projects, hackathons, and combining engineering fundamentals with AI.
+image: /images/ml.png
 ---
 
 <div class="table-of-contents" markdown="1">

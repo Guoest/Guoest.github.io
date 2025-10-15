@@ -3,6 +3,8 @@ layout: post
 title: "I Built a Buy Me a Coffee Clone in 6 Hours Using AI (And You Can Too)"
 date: 2025-07-17
 categories: [tech]
+description: Building a fully functional payment platform from scratch in 6 hours using AI. Real results, practical tips, and how AI development tools are revolutionizing software creation.
+image: /images/coffee-blog/hero.png
 ---
 
 <div class="table-of-contents" markdown="1">

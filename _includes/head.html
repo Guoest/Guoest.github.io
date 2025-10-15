@@ -6,6 +6,41 @@
   <meta name="robots" content="{{ page.robots }}">
   {% endif %}
   {%- seo -%}
+
+  <!-- Enhanced meta descriptions -->
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% elsif page.excerpt %}
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+  {% else %}
+  <meta name="description" content="{{ site.description }}">
+  {% endif %}
+
+  <!-- Open Graph metadata for social sharing -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if page.image %}
+  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
+  {% elsif page.thumbnail %}
+  <meta property="og:image" content="{{ site.url }}{{ page.thumbnail }}">
+  {% endif %}
+
+  <!-- Twitter Card metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  {% if site.twitter_username %}
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  {% endif %}
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.image %}
+  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+  {% elsif page.thumbnail %}
+  <meta name="twitter:image" content="{{ site.url }}{{ page.thumbnail }}">
+  {% endif %}
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/categories.css" | relative_url }}">
