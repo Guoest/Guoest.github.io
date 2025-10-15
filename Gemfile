@@ -43,3 +43,5 @@ group :test do
   gem 'html-proofer', '~> 5.0'
   gem 'rake', '~> 13.0'
 end
+
+gem "debug", "~> 1.11"

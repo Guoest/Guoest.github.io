@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About Yicheng
+lang: en
 permalink: /about/
 ---
 
