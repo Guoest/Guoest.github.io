@@ -4,12 +4,24 @@ title: "The Path I Didn't Plan"
 categories: [life]
 date: 2025-11-01
 description: "From hating computers to becoming an AI engineer - a Toastmasters award-winning speech about life's unexpected journey and finding purpose in detours."
-image: /images/the-path-i-didnt-plan/hero.jpg
+image: /images/the-path-i-didnt-plan/toast-masters.jpg
 author: "Yicheng Guo"
-author_bio: "AI Engineer with 15+ years in tech, experiencing waves from internet to cloud to AI"
+author_bio: "AI Engineer with 10+ years in tech, experiencing waves from internet to cloud to AI"
 ---
 
 *By [Yicheng Guo](/about), AI Engineer with 10+ years navigating technology's biggest transformations.*
+
+
+<div class="table-of-contents" markdown="1">
+### Contents
+- [The Speech That Won Best Speaker](#the-speech-that-won-best-speaker)
+- [The Lesson: Embrace the Detour](#the-lesson-embrace-the-detour)
+  - [Three Takeaways from 10 Years in Tech](#three-takeaways-from-10-years-in-tech)
+- [Why This Matters for Your Journey](#why-this-matters-for-your-journey)
+</div>
+
+{% include image.html src="/images/the-path-i-didnt-plan/toast-masters.jpg" alt="Toastmasters Speech" caption="Toastmasters Speech" %}
+
 
 ## The Speech That Won Best Speaker
 
