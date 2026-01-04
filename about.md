@@ -28,6 +28,26 @@ Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Tr
 ## Speaking Engagements
 
 {% include speaking-engagement.html
+   image="/images/make_ai.jpeg"
+   title="Keynote Speech"
+   topic="10x Your Productivity with AI Employees"
+   topic_url="https://www.canva.com/design/DAG7ArjKaZQ/3NnfCq9Ms1Wohh171SsEgQ/view?utm_content=DAG7ArjKaZQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h25408f6ca4#6"
+   date="Dec 2025"
+   event="Make AI Practical Day"
+   event_url="https://www.eventbrite.com.au/e/make-ai-practical-day-real-ai-real-life-real-connections-tickets-1866537406629"
+%}
+
+{% include speaking-engagement.html
+   image="/images/invest_hk.jpeg"
+   title="Industry Talk"
+   topic="Structuring AI Teams"
+   topic_url="https://docs.google.com/presentation/d/1IbfGdSjcWevyJSWz2ZDgv5wotvt2glQXdAgo5YWk4_c/edit"
+   date="Nov 2025"
+   event="InvestHK AI Forum - Gateway to Asia"
+   event_url="https://events.humanitix.com/investhk-ai-forum-gateway-to-asia"
+%}
+
+{% include speaking-engagement.html
    image="/images/cgs.jpeg"
    title="Industry Panel"
    topic="The Path You Didn't Plan"
@@ -75,6 +95,16 @@ Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Tr
    date="Jun 2025"
    event="Code for School"
    event_url="https://csinschools.io/tech-futures-career-resources-for-schools/"
+%}
+
+{% include speaking-engagement.html
+   image="/images/monash.jpeg"
+   title="Workshop"
+   topic="From AI Theory to Real-World Impact"
+   topic_url="https://deepneuron.org/blogs/mdn-x-rea-immersion-day-bridging-industry-and-education"
+   date="Feb 2025"
+   event="Monash DeepNeuron Immersion Day"
+   event_url="https://deepneuron.org/blogs/mdn-x-rea-immersion-day-bridging-industry-and-education"
 %}
 
 
