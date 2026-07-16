@@ -28,6 +28,15 @@ Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Tr
 ## Speaking Engagements
 
 {% include speaking-engagement.html
+   image="/images/ai-engineer-melbourne-2026.jpeg"
+   title="Conference Talk"
+   topic="Our AI Hallucinated in Production: How We Fixed It with Evals"
+   date="Jun 3–4, 2026"
+   event="AI Engineer Melbourne 2026"
+   event_url="https://lnkd.in/g7a5UffB"
+%}
+
+{% include speaking-engagement.html
    image="/images/make_ai.jpeg"
    title="Keynote Speech"
    topic="10x Your Productivity with AI Employees"
