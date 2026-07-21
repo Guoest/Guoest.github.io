@@ -31,9 +31,10 @@ Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Tr
    image="/images/ai-engineer-melbourne-2026.jpeg"
    title="Conference Talk"
    topic="Our AI Hallucinated in Production: How We Fixed It with Evals"
+   topic_url="https://conffab.com/presentation/our-ai-hallucinated-in-production-how-we-fixed-it-with-evals/?gl=b9JeXsz49VmN"
    date="Jun 3–4, 2026"
    event="AI Engineer Melbourne 2026"
-   event_url="https://www.linkedin.com/posts/yichengguo_just-wrapped-up-ai-engineer-melbourne-my-ugcPost-7468178370372153344-F1NJ/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA0Vj0gBvMYFWr0iKZJ-c47SlsLGDh3nmCg"
+   event_url="https://conffab.com/event/ai-engineer-melbourne-2026/"
 %}
 
 {% include speaking-engagement.html
