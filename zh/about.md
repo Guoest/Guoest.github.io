@@ -3,7 +3,7 @@ layout: default
 title: 关于Yicheng Guo - 高级机器学习工程师
 lang: zh
 permalink: /zh/about/
-description: Yicheng Guo是REA Group的高级机器学习工程师，专注于AI产品、MLOps和智能系统扩展。前Google工程师、耐力运动员和AI思想领袖。
+description: Yicheng Guo是Beyond Intelligence AI的创始人兼首席顾问，专注于AI产品、MLOps和智能系统扩展。曾任REA Group高级机器学习工程师、前Google工程师、耐力运动员和AI思想领袖。
 ---
 
 <link rel="stylesheet" href="/assets/css/speaking-engagements.css">

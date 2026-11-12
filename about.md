@@ -3,7 +3,7 @@ layout: default
 title: About Yicheng Guo - Senior Machine Learning Engineer
 lang: en
 permalink: /about/
-description: Yicheng Guo is a Senior ML Engineer at REA Group specializing in AI products, MLOps, and scaling intelligent systems. Former Google engineer, endurance athlete, and AI thought leader.
+description: Yicheng Guo is the Founder and Principal Consultant of Beyond Intelligence AI, specializing in AI products, MLOps, and scaling intelligent systems. Former Senior ML Engineer at REA Group and Google engineer, endurance athlete, and AI thought leader.
 ---
 
 <link rel="stylesheet" href="/assets/css/speaking-engagements.css">
