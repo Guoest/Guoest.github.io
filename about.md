@@ -19,11 +19,12 @@ Yicheng Guo is an AI thought leader and machine learning engineer in the tech in
 Outside of work, Yicheng is an avid endurance athlete, with numerous Ironman [Triathlons](https://www.multisportaustralia.com.au/races/ironman-703-western-sydney-2022/events/1/results/individuals/892) and and [Marathons](https://my1.raceresult.com/225892/certificate/157/Certificates) to his name, and is a certified running coach accredited by Athletics Australia. He advocates for discipline and hard work, viewing endurance sports as a means to strengthen his mental tenacity.
 
 ## Experience
-1. **Senior Machine Learning Engineer,** REA Group, Dec 2023 – Present
-2. **Senior Systems Engineer,** REA Group, Aug 2021 – Dec 2023
-3. **Lead Site Reliability Engineer,** PwC, Aug 2018 – Aug 2021
-4. **Site Reliability Engineer,** Optiver, Dec 2017 - Jul 2018
-5. **IT Graduate,** Google, July 2015 – Oct 2017 
+1. **Founder and Principal Consultant,** Beyond Intelligence AI, Jul 2025 – Present
+2. **Senior Machine Learning Engineer,** REA Group, Dec 2023 – Oct 2026
+3. **Senior Systems Engineer,** REA Group, Aug 2021 – Dec 2023
+4. **Lead Site Reliability Engineer,** PwC, Aug 2018 – Aug 2021
+5. **Site Reliability Engineer,** Optiver, Dec 2017 - Jul 2018
+6. **IT Graduate,** Google, July 2015 – Oct 2017 
 
 ## Speaking Engagements
 
